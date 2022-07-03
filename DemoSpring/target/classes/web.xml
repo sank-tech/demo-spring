@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+ 
+ <bean id= "studentBean" class="com.greatlearning.Student">
+<property name="stdid" value="123"></property>
+<property name="stdname" value="sanket"></property>
+<property name="stdaddress" value="khamgaon"></property> 
+ </bean>
+ 
+ <bean id= "studentBean1" class="com.greatlearning.Student">
+<constructor-arg name="stdid" value="456"></constructor-arg>
+<constructor-arg name="stdname" value="sank"></constructor-arg>
+<constructor-arg name="stdaddress" value="shegaon"></constructor-arg> 
+ </bean>
+ 
+ <bean id= "employeeBean" class="com.greatlearning.Employee">
+<property name="empid" value="789"></property>
+<property name="empname" value="ram"></property>
+<property name="empaddress" value="khamgaon"></property> 
+ </bean>
+ 
+ <bean id= "employeeBean1" class="com.greatlearning.Employee">
+<constructor-arg name="empid" value="741"></constructor-arg>
+<constructor-arg name="empname" value="sham"></constructor-arg>
+<constructor-arg name="empaddress" value="shegaon"></constructor-arg> 
+ </bean>
+ 
+ </beans>
+ 
+  
